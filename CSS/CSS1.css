@@ -1,0 +1,94 @@
+/* p{
+    background-color: chartreuse;
+    color:chocolate;
+} */
+  body{
+    background: rgb(153,244,245);
+background: -moz-linear-gradient(0deg, rgba(153,244,245,1) 0%, rgba(212,174,93,1) 100%);
+background: -webkit-linear-gradient(0deg, rgba(153,244,245,1) 0%, rgba(212,174,93,1) 100%);
+background: linear-gradient(0deg, rgba(153,244,245,1) 0%, rgba(212,174,93,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#99f4f5",endColorstr="#d4ae5d",GradientType=1);
+background-size:cover;
+}  
+
+
+
+/* CSS Selectors:
+a)	CSS single element
+b)	CSS Grouping
+c)	CSS ID 
+d)	CSS class */
+
+
+/* h1{
+    color:blueviolet;
+}
+h2{
+    color: blueviolet;
+}
+h3{
+    color: blueviolet;
+} */
+
+h1, h2, h3{
+  
+        color: blueviolet;
+}
+
+.p1{
+   background-color: azure; 
+}
+.p2{
+    background-color: brown;
+    color: darkgoldenrod;
+}
+
+#p3{
+    background-color: chartreuse;
+}
+#div1{
+    font-weight: bolder;
+}
+
+/* TASK: have four paragraphs: change the background colour for them using 
+
+Internal, External, Inline style.
+in the internal, external use ID, class and elemnet name.
+*/
+
+/* FONT IN CSS */
+/* Web safe font: come as pre-installed with most of the OS.
+Web Font: Import from the internet.
+*/
+
+.mypragraph1{
+
+    font-family:Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    /* font-size: x-large; */
+    font-size: 20px;
+  font-variant: small-caps;
+  font-weight: bold;
+
+}
+
+
+/* COLOR IN CSS */
+
+#mypragraph2{
+    color:brown;
+    background-color:#09c115;
+}
+
+.mypragraph3{
+    background-color: rgb(255, 165, 0);
+    color: rgb(200, 100, 220)
+}
+.mypragraph1{
+    background-color: rgba(200, 0, 0, 0.5);
+    color: hsl(200, 50%, 10%);
+}
+.mypa4{
+    color: green;
+    background-color: hsla(300, 50%, 10%, 1);
+}

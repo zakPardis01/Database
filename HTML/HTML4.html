@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- HTML Semantic Tags -->
+    <!-- These are elements which describe the job they do
+         e.g. <form>, <table>, <article>, <header>, <footer> -->
+
+    <!-- Below is a standard format for a webpage inside the <body> of a html document. 
+            Identify the Semantic Tags-->
+
+    <header style="background-color: aqua;">
+        <h1>Just IT Organization</h1>
+        <p>Video provides a powerful way to help you prove your point. When you click
+            Online Video, you can paste in the
+            embed code
+            for the video you want to add. You can also type a keyword to search online for the video that best fits
+            your document.</p>
+    </header>
+    <nav>
+        <a href="HTML1.html" target="_blank">HTML First Day</a>
+        <a href="HTML2.html">HTML Second Day</a>
+        <a href="HTML3.html">HTML Third Day</a>
+
+    </nav>
+
+    <div>
+
+        <h2 class="htmlparagraph">HTML</h2>
+        <p class="htmlparagraph">Themes and styles also help keep your document coordinated. When you click Design and
+            choose a new Theme, the
+            pictures,
+            charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to
+            match the
+            new theme.</p>
+    </div>
+
+
+    <footer id="footerid">
+
+        <p>The owner of this page is: <span style="background-color: blueviolet;">Zak PARDIS</span> &copy;</p>
+
+    </footer>
+    <p>pictures,
+        charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to
+        match the</p>
+
+    <style>
+        .htmlparagraph {
+            background-color: burlywood;
+            color: red;
+        }
+
+        #footerid {
+            color: fuchsia;
+        }
+    </style>
+
+    <!------------------HTML FORMS------------------->
+
+    <!-- HTML Forms -->
+    <!-- A form uses the <form> tag (semantic tag :) ) -->
+    <!-- For each row of the form two lines of code are needed using <label> and <input>-->
+
+    <!-- <label> will be the text describing the box e.g. "First name:", it will also have a for attribute 
+             that enables it to link with the the input's id (these need to be the same)-->
+
+    <!-- <input> will have multiple attributes, these will change depending on input type.
+             Standard attributes include "type"(determines type of input), "id"(may be use by CSS or JS) 
+             and name(this will link to the label via "for") -->
+
+    <h1>HTML Forms</h1>
+
+    <!--basics-->
+
+    <form action="">
+        <label for="firstName">Enter Name</label>
+        <input type="text" name="firstName"> <br />
+        <label for="lastName">Enter lastName</label>
+        <input type="text" name="lastName">
+
+    </form>
+    <br />
+    <form action="HTML1.html">
+        <fieldset>
+            <legend>User Login Form</legend>
+            <label for="userName">userName</label>
+            <input type="text" name="userName" required> <br> <br>
+            <label for="userPassword">userPassword</label>
+            <input type="password" name="userPassword" required><br> <br>
+            <input type="submit" value="Log In">
+
+        </fieldset>
+    </form>
+
+    <!--TASK: CREATE A LOGIN PAGE: UserName, Password, Email - 
+    when you are clicking on Login it should open another page - Login Successfully-->
+    <br />
+    <form action="HTML1.html" method="post">
+        <fieldset>
+            <legend>Student Registration Form</legend>
+            <input type="text" placeholder="Name*" disabled><br /><br />
+            <input type="password" placeholder="Password*" minlength="5"><br /><br />
+            <input type="email" placeholder="Email*" size="30px"><br /><br />
+            <input type="date"> <label for="" style="color: gray;">Date*</label><br /><br />
+            <input type="file"><label for="" style="color: gray;">Picture*</label><br /><br />
+            <textarea name="" id="" cols="30" rows="10" placeholder="Description ....... "></textarea><br /><br />
+
+            <input type="submit" value="Login">
+            <input type="reset" value="Clear All">
+            <input type="image" src="/HTML/Image/Cake.ico" onclick="submit()">
+
+        </fieldset>
+    </form>
+    <br /><br /><br /><br />
+
+    <table style="background-color: blueviolet;" align="center">
+        <tr>
+            <td colspan="2" style="text-align: center; font-weight: bold;"> Student Login Page</td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;"><input type="submit" value="Login"></td>
+        </tr>
+    </table>
+    <br /><br /><br /><br />
+</body>
+
+</html>
